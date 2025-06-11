@@ -7,11 +7,10 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <!-- This top section remains the same -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Current Balance:"
+        android:text="Dinero actual:"
         android:textSize="18sp" />
 
     <TextView
@@ -28,30 +27,29 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Expense"
+        android:text="Nuevo gasto"
         android:textSize="18sp" />
 
     <EditText
         android:id="@+id/amountEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Amount spent (e.g., 15.50)"
+        android:hint="Cantidad gastada (ej., 15.50)"
         android:inputType="numberDecimal" />
 
     <EditText
         android:id="@+id/descriptionEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Optional: what was it for?"
+        android:hint="Opcional: ¿para qué fue eso?"
         android:inputType="textCapSentences" />
 
     <Button
         android:id="@+id/subtractButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Subtract Expense" />
+        android:text="Substraer gasto" />
 
-    <!-- NEW: Add a divider and a history list -->
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -62,7 +60,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Expense History"
+        android:text="Historial de gastos"
         android:textSize="18sp"
         android:layout_marginBottom="8dp"/>
 
@@ -70,6 +68,6 @@
         android:id="@+id/expenseHistoryListView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" /> <!-- This makes the list fill remaining space -->
+        android:layout_weight="1" />
 
 </LinearLayout>
